@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>First Webpage</title>
+</head>
+<body><h1><u> First Webform</u></h1>
+<input Name="box1" id="box1" type="number"/>
+<select id ="operator" >
+    <option value = "+">+</option>
+    <option value = "-">-</option>
+    <option value = "*">*</option>
+    <option value = "/">/</option>
+</select>
+<input Name="box2" id="box2" type="number"/>
+<button onclick="Calculate()" > Calculate</button>
+
+
+<script>
+    function Calculate()
+    {
+        var a = parseInt(document.getElementById("box1").value);
+        var b = parseInt(document.getElementById("box2").value);
+        var operator = document.getElementById("operator").value;
+        var c = 0;
+        if (operator == "+")
+        {
+            c = a+b;
+
+        }
+
+        if (operator == "-")
+        {
+            c = a-b;
+            
+        }
+        if (operator == "*")
+        {
+            c = a*b;
+            
+        }
+        if (operator == "/")
+        {
+            c = a/b;
+            
+        }
+        console.log(c);
+    }
+
+</script>
+
+
+</html>
